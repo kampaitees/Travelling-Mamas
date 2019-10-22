@@ -85,3 +85,7 @@ def three(request):
 
 def two(request):
     return render(request, 'two.html')
+
+
+def hotel_booking(request):
+    return render(request, 'hotel_booking.html')
