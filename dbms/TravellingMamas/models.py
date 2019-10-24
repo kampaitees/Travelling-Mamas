@@ -7,6 +7,7 @@ class hotel(models.Model):
     description = models.CharField(max_length=100)
     location = models.CharField(max_length=100)
     reviews = models.IntegerField()
+    image = models.ImageField()
 
 class tour(models.Model):
     tour_id = models.AutoField(primary_key=True)
@@ -16,6 +17,7 @@ class tour(models.Model):
     description = models.CharField(max_length=100)
     fare = models.IntegerField()
     reviews = models.IntegerField()
+    image = models.ImageField()
 
 class flight(models.Model):
     flight_number = models.AutoField(primary_key=True)

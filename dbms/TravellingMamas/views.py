@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-
+from . import models  
+import random
 # Create your views here.
 
 def home(request):
@@ -18,7 +19,7 @@ def contact(request):
 def hotel_room(request):
     return render(request, 'hotel-room.html')
 
-def hotel(request):
+def hotels(request):
     return render(request, 'hotels.html')
 
 def service(request):
@@ -31,30 +32,114 @@ def tour(request):
     return render(request, 'tours.html')
 
 def srinagar(request):
-    return render(request, 'srinagar.html')
+    list_hotels = []
+    hotels = models.hotel.objects.all()
+    hotels = hotels[:8]
+    price = [1430, 1320, 1200, 1078, 2130, 4535, 2120, 5450]
+    for hotel, price in zip(hotels, price):
+        list_hotels.append((hotel, price))
+    return render(request, 'srinagar.html', {'list' : list_hotels})
 
 def shimla(request):
-    return render(request, 'shimla.html')
+    list_hotels = []
+    hotels = models.hotel.objects.all()
+    hotels = hotels[8:16]
+    price = [1430, 1320, 1200, 1078, 2130, 4535, 2120, 5450]
+    random.shuffle(price)
+    random.shuffle(price)
+    for hotel, price in zip(hotels, price):
+        list_hotels.append((hotel, price))
+    return render(request, 'shimla.html', {'list' : list_hotels})
 
 def nainital(request):
-    return render(request, 'nainital.html')
+    list_hotels = []
+    hotels = models.hotel.objects.all()
+    hotels = hotels[16:24]
+    price = [1430, 1320, 1200, 1078, 2130, 4535, 2120, 5450]
+    random.shuffle(price)
+    random.shuffle(price)
+    random.shuffle(price)
+    for hotel, price in zip(hotels, price):
+        list_hotels.append((hotel, price))
+    print(list_hotels)
+    return render(request, 'nainital.html', {'list' : list_hotels})
 
 def darjeeling(request):
-    return render(request, 'darjeeling.html')
+    list_hotels = []
+    hotels = models.hotel.objects.all()
+    hotels = hotels[24:32]
+    price = [1430, 1320, 1200, 1078, 2130, 4535, 2120, 5450]
+    random.shuffle(price)
+    random.shuffle(price)
+    random.shuffle(price)
+    random.shuffle(price)
+    for hotel, price in zip(hotels, price):
+        list_hotels.append((hotel, price))
+    return render(request, 'darjeeling.html', {'list' : list_hotels})
 
 def coorg(request):
-    return render(request, 'coorg.html')
+    list_hotels = []
+    hotels = models.hotel.objects.all()
+    hotels = hotels[32:40]
+    price = [1430, 1320, 1200, 1078, 2130, 4535, 2120, 5450]
+    random.shuffle(price)
+    random.shuffle(price)
+    random.shuffle(price)
+    random.shuffle(price)
+    random.shuffle(price)
+    for hotel, price in zip(hotels, price):
+        list_hotels.append((hotel, price))
+    return render(request, 'coorg.html', {'list' : list_hotels})
 
 
 def ooty(request):
-    return render(request, 'ooty.html')
+    list_hotels = []
+    hotels = models.hotel.objects.all()
+    hotels = hotels[40:48]
+    price = [1430, 1320, 1200, 1078, 2130, 4535, 2120, 5450]
+    random.shuffle(price)
+    random.shuffle(price)
+    random.shuffle(price)
+    random.shuffle(price)
+    random.shuffle(price)
+    random.shuffle(price)
+    for hotel, price in zip(hotels, price):
+        list_hotels.append((hotel, price))
+    return render(request, 'ooty.html', {'list' : list_hotels})
 
 def alleppey(request):
-    return render(request, 'alleppey.html')
+    list_hotels = []
+    hotels = models.hotel.objects.all()
+    hotels = hotels[48:56]
+    price = [1430, 1320, 1200, 1078, 2130, 4535, 2120, 5450]
+    random.shuffle(price)
+    random.shuffle(price)
+    random.shuffle(price)
+    random.shuffle(price)
+    random.shuffle(price)
+    random.shuffle(price)
+    random.shuffle(price)
+    for hotel, price in zip(hotels, price):
+        list_hotels.append((hotel, price))
+    return render(request, 'alleppey.html', {'list' : list_hotels})
 
 
 def dharmashala(request):
-    return render(request, 'dharmashala.html')
+    list_hotels = []
+    hotels = models.hotel.objects.all()
+    hotels = hotels[56:64]
+    price = [1430, 1320, 1200, 1078, 2130, 4535, 2120, 5450]
+    random.shuffle(price)
+    random.shuffle(price)
+    random.shuffle(price)
+    random.shuffle(price)
+    random.shuffle(price)
+    random.shuffle(price)
+    random.shuffle(price)
+    random.shuffle(price)
+    for hotel, price in zip(hotels, price):
+        list_hotels.append((hotel, price))
+    return render(request, 'dharmashala.html', {'list' : list_hotels})
 
 def kashmir(request):
     return render(request, 'kashmir.html')
