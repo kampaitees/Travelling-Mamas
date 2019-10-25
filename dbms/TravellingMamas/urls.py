@@ -1,4 +1,5 @@
 from django.urls import path
+from django.contrib.auth.views import PasswordResetView, PasswordResetDoneView
 from . import views
 
 urlpatterns = [
@@ -31,4 +32,9 @@ urlpatterns = [
     path('three', views.three, name = 'three'),
     path('two', views.two, name = 'two'),
     path('hotel_booking', views.hotel_booking, name = 'hotel_booking'),
+    path('register', views.register, name = 'register'),
+    path('login', views.login, name = 'login'),
+    path('logout', views.logout, name = 'logout'),
+    path('password_reset', PasswordResetView, name = 'password_reset'),
+    path('password_reset/done', PasswordResetDoneView, name = 'password_reset_done')
 ]
