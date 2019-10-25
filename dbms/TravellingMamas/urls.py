@@ -11,7 +11,6 @@ urlpatterns = [
     path('hotel-room', views.hotel_room, name = 'hotel-room'),
     path('hotels', views.hotels, name = 'hotel'),
     path('services', views.service, name = 'services'),
-    # path('tour-place', views.tour_place, name = 'tour-place'),
     path('tours', views.tour, name = 'tours'),
     path('srinagar', views.srinagar, name = 'srinagar'),
     path('shimla', views.shimla, name = 'shimla'),
