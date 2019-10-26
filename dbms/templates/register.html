@@ -18,7 +18,7 @@
 	<!-- Meta tag Keywords -->
 
 	<!-- css files -->
-	<link rel="stylesheet" href="{% static 'css/style_login_register.css' %}" type="text/css" media="all" />
+	<link rel="stylesheet" href="{% static 'css/style_register.css' %}" type="text/css" media="all" />
 	<!-- Style-CSS -->
 	<link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
 	<!-- Font-Awesome-Icons-CSS -->
@@ -64,10 +64,12 @@ a:active {
 			<!-- vertical tabs -->
 			<div class="vertical-tab">
 
-				<div id="section2" class="section-w3ls" style = "text-align: center;">
+				<div id="section2" class="section-w3ls">
 					<input type="radio" name="sections" id="option2" checked >
+					<label for="option1" class="icon-left-w3pvt"><span class="fa fa-pencil-square" aria-hidden="true" style = ></span>Register</label>
+
 					<article>
-						<form action="register" method="post" style = "width: 100%;	margin-left : -50%">
+						<form action="register" method="post" >
 							{% csrf_token %}
 							<h3 class="legend"></h3>
 							<div class="input" style="float:left">
