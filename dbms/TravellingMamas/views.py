@@ -129,6 +129,22 @@ def hotel_booking(request):
 
 
 
+def user(request):
+    return render(request, 'user.html')
+
+
+def edit_profile(request):
+    return render(request, 'edit_profile.html')
+
+
+def layout(request):
+    return render(request, 'layout.html')
+
+
+def profile(request):
+    return render(request, 'profile.html')
+
+
 def home(request):
     return render(request, 'home.html')
 
