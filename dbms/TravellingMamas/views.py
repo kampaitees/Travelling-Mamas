@@ -1,9 +1,11 @@
+import time
 import random
 from . import models  
 from django.contrib import messages
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User, auth
+
 
 def register(request):
     if request.method == 'POST':
@@ -56,6 +58,75 @@ def login(request):
 def logout(request):
     auth.logout(request)
     return redirect('/')
+
+
+
+
+def hotel_booking(request):
+    
+    list_of_hotels = ['Hotel Woodpark', 'Hotel Novacany', 'Hotel Madaland', 'Hotel Sanskriti', 'Hotel Sriram resort', 'Hotel Rishi Mangalam',
+                  'Hotel Rosewood International', 'Hotel Basant Residency', 'Hotel Sharma Brothers', 'Hotel Havetual', 'Hotel Sankriti', 
+                  'Hotel Ganga', 'Hotel American Resort', 'Hotel Mountain Crest', 'Hotel Snow Queen', 'Hotel Radisan', 'Hotel Pythava Resort', 
+                  'Hotel Wild Ville', 'Hotel Sansar Apna', 'Hotel Appleview', 'Hotel Polish Resort', 'Hotel Hirest', 'Hotel King Resort',
+                  'Hotel Nishu', 'Hotel Rista Resort', 'Hotel Nature Ville', 'Hotel Sansar', 'Hotel Pineview', 'Hotel British Resort', 
+                  'Hotel Hill Crest', 'Hotel Snow King Resort', 'Hotel Nishat', 'Hotel Raj Resort', 'Hotel Abbydhama Esate Stay', 
+                  'Hotel Woodstack Villa', 'Hotel Coorg Heights', 'Hotel Indrastha', 'Hotel IBNI', 'Hotel OYO Hilldale Resort', 'Hotel Vashati', 
+                  'Hotel Fabkhems', 'Hotel Treebo Trend Whispering', 'Hotel Novacany', 'Hotel Sterling', 'Hotel LakeView', 'Hotel Sunaark Grand',
+                  'Hotel Tuilips', 'Hotel Berry Hills', 'Hotel WhiteShore Beach', 'Hotel Ramada', 'Hotel Baywatch Beach Resort', 
+                  'Hotel Paagada Resort', 'Hotel Royal Park', 'Hotel Zostel', 'Hotel Bamboon Lagoon', 'Hotel Palace Resort', 'Hotel Adhivaha',
+                  'Hotel Vaikunth', 'Hotel InClover', 'Hotel Pink Resorts', 'Hotel Dauladhar', 'Hotel Zostel', 'Hotel Horizon Villa', 
+                  'Hotel Imperial Resorts']
+    list_of_hotels = [i.lower() for i in list_of_hotels] 
+    list_of_rooms = ['FAMILY ROOM', 'DOUBLE ROOM', 'SUITE ROOM', 'LUXURY ROOM', 'CLASSICAL DOUBLE ROOM', 'CLASSICAL DOUBLE ROOM']
+    list_of_rooms = [i.lower() for i in list_of_rooms]
+
+    if request.method == 'POST':
+        first_name = request.POST['first_name']
+        last_name = request.POST['last_name']
+        email = request.POST['email']
+        mobile_number = request.POST['number']
+        check_in = request.POST['in']
+        check_out = request.POST['out']
+        number_of_guests = request.POST['number_of_guests']
+        room_type = request.POST['room_type']
+        hotel_name = request.POST['hotel_name']
+
+
+        if len(mobile_number) != 10:
+            messages.info(request, "Mobile number should be 10 digit")
+            return redirect('hotel_booking')
+
+        elif check_out < check_in:
+            messages.info(request, "Check-in  can't be greater than Check-out")
+            return redirect('hotel_booking')
+
+        elif room_type.lower() not in list_of_rooms:
+            print(room_type.lower())
+            messages.info(request, "Above Room Type is not available")
+            return redirect('hotel_booking')
+
+        elif hotel_name.lower() not in list_of_hotels:
+            messages.info(request, "Invalid Hotel Name")
+            return redirect('hotel_booking')
+        else:   
+            models.user_details.objects.create(
+                first_name = first_name,
+                last_name = last_name,
+                email = email,
+                room_type = room_type,
+                hotel_name = hotel_name,
+                check_in = check_in,
+                check_out = check_out,
+                number_of_guests = number_of_guests,
+                mobile_number = mobile_number
+            )
+            messages.info(request, "Hotel Booked Successfully")
+            time.sleep(3)
+            return redirect('/')
+
+    else:
+        return render(request, 'hotel_booking.html')
+
 
 
 def home(request):
@@ -225,6 +296,3 @@ def three(request):
 def two(request):
     return render(request, 'two.html')
 
-
-def hotel_booking(request):
-    return render(request, 'hotel_booking.html')

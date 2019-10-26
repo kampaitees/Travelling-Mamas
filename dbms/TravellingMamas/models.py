@@ -6,8 +6,19 @@ class hotel(models.Model):
     hotel_name = models.CharField(max_length=100)
     description = models.CharField(max_length=100)
     location = models.CharField(max_length=100)
-    reviews = models.IntegerField()
+    reviews = models.CharField(max_length=100)
     image = models.ImageField()
+
+class user_details(models.Model):
+    first_name = models.CharField(max_length=100)
+    last_name = models.CharField(max_length=100)
+    email = models.CharField(max_length=100)
+    room_type = models.CharField(max_length = 100)
+    hotel_name = models.CharField(max_length = 100)
+    check_in = models.CharField(max_length=100)
+    check_out = models.CharField(max_length=100)
+    number_of_guests = models.CharField(max_length=100)
+    mobile_number = models.CharField(max_length=100)
 
 class tour(models.Model):
     tour_id = models.AutoField(primary_key=True)
@@ -15,8 +26,8 @@ class tour(models.Model):
     place = models.CharField(max_length=100)
     location = models.CharField(max_length=100)
     description = models.CharField(max_length=100)
-    fare = models.IntegerField()
-    reviews = models.IntegerField()
+    fare = models.CharField(max_length=100)
+    reviews = models.CharField(max_length=100)
     image = models.ImageField()
 
 class flight(models.Model):
@@ -32,8 +43,8 @@ class room_type(models.Model):
         unique_together = (('room_number', 'room_id'),)
 
     room_id = models.AutoField(primary_key=True)
-    room_number = models.IntegerField()
-    price = models.IntegerField()
+    room_number = models.CharField(max_length=100)
+    price = models.CharField(max_length=100)
 
 
 
@@ -47,17 +58,17 @@ class user(models.Model):
     middle_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
     password = models.CharField(max_length=100)
-    dob = models.DateField(blank=True)
+    dob = models.CharField(max_length=100)
 
 
 class contact(models.Model):
 	user_id = models.AutoField(primary_key=True)
-	contact = models.IntegerField()
+	contact = models.CharField(max_length=100)
 
 
 class rooms(models.Model):
 	room_id = models.AutoField(primary_key=True)
-	accomadation = models.IntegerField()
+	accomadation = models.CharField(max_length=100)
 
 class airline(models.Model):
 	airline_id = models.AutoField(primary_key=True)
@@ -72,7 +83,7 @@ class has_flight(models.Model):
     class Meta:
         unique_together = (('flight_number', 'type'),)
 
-    flight_number = models.IntegerField()
+    flight_number = models.CharField(max_length=100)
     type = models.CharField(max_length=100)
     flight_number = models.ForeignKey(flight, on_delete=models.CASCADE)
     type = models.ForeignKey(hotel_class, on_delete=models.CASCADE)
@@ -81,8 +92,8 @@ class has_room(models.Model):
     class Meta:
         unique_together = (('room_id', 'room_number'),)
 
-    room_id = models.IntegerField()
-    room_number = models.IntegerField()
+    room_id = models.CharField(max_length=100)
+    room_number = models.CharField(max_length=100)
     room_id = models.ForeignKey(rooms, on_delete=models.CASCADE)
     room_number = models.ForeignKey(room_type, on_delete=models.CASCADE)
 
@@ -91,8 +102,8 @@ class belong_to(models.Model):
 	class Meta:
 		unique_together = (('airline_id','flight_number'),)
 
-	airline_id = models.IntegerField()
-	flight_number = models.IntegerField()
+	airline_id = models.CharField(max_length=100)
+	flight_number = models.CharField(max_length=100)
 	airline_id = models.ForeignKey(airline, on_delete=models.CASCADE)
 	flight_number = models.ForeignKey(flight, on_delete=models.CASCADE)
 
@@ -101,8 +112,8 @@ class consists(models.Model):
     class Meta:
         unique_together = (('hotel_id', 'room_id'),)
 
-    hotel_id = models.IntegerField()
-    room_id = models.IntegerField()
+    hotel_id = models.CharField(max_length=100)
+    room_id = models.CharField(max_length=100)
     hotel_id = models.ForeignKey(hotel, on_delete=models.CASCADE)
     room_id = models.ForeignKey(room_type, on_delete=models.CASCADE)
 
@@ -110,10 +121,10 @@ class book(models.Model):
     class Meta:
         unique_together = (('user_id', 'flight_number', 'hotel_id', 'tour_id'),)
 
-    user_id = models.IntegerField()
-    flight_number = models.IntegerField()
-    hotel_id = models.IntegerField()
-    tour_id = models.IntegerField()
+    user_id = models.CharField(max_length=100)
+    flight_number = models.CharField(max_length=100)
+    hotel_id = models.CharField(max_length=100)
+    tour_id = models.CharField(max_length=100)
     user_id = models.ForeignKey(user, on_delete=models.CASCADE)
     flight_number = models.ForeignKey(flight, on_delete=models.CASCADE)
     hotel_id = models.ForeignKey(hotel, on_delete=models.CASCADE)
