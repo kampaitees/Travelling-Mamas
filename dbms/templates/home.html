@@ -63,6 +63,10 @@
 
 	<div id="page">
 		<nav class="colorlib-nav" role="navigation">
+									
+									{% comment %} {% for message in messages %}
+										<h3> {{message}}</h3>
+									{% endfor %} {% endcomment %}
 			<div class="top-menu">
 				<div class="container-fluid">
 					<div class="row">
@@ -71,8 +75,7 @@
 						</div>
 						<div class="col-xs-10 text-right menu-1">
 							<ul>
-								<li class="active"><a href="home">Home</a></li>
-								<li class="has-dropdown">	
+								<li class="active"><a href="home">Home</a></li>	
 								<li><a href="tours">Destination</a></li>
 								<li><a href="flight_search">Flights</a></li>
 								<li><a href="hotels">Hotels</a></li>
@@ -729,7 +732,7 @@
 						<h4>Book Now</h4>
 						<p>
 							<ul class="colorlib-footer-links">
-								<li><a href="flights">Flight</a></li>
+								<li><a href="flight_search">Flight</a></li>
 								<li><a href="hotels">Hotels</a></li>
 								<li><a href="tours">Tour</a></li>
 								<li><a href="hotels">Resorts</a></li>

@@ -36,6 +36,7 @@
 	<div class="booking-form-w3layouts">
 		<!-- Form starts here -->
 		<form action="booking_flight" method="post">
+		{% csrf_token %}
 			<h2 class="sub-heading-agileits">Booking Details</h2>
 			<div class="main-flex-w3ls-sectns">
 				
@@ -94,6 +95,11 @@
 			<input type="submit" value="Submit">
 			<input type="reset" value="Clear Form">
 			<div class="clear"></div>
+			<div style = "color:white; text-align: center;">
+				{% for message in messages %}
+					<h3> {{message}}</h3>
+				{% endfor %}
+			</div>
 		</form>
 		<!--// Form starts here -->
 	</div>

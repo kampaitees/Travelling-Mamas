@@ -29,6 +29,21 @@ class user_details(models.Model):
     check_out = models.CharField(max_length=100)
     number_of_guests = models.CharField(max_length=100)
     mobile_number = models.CharField(max_length=100)
+    user_id = models.CharField(max_length=100)
+
+
+class user_flight_details(models.Model):
+    source_city = models.CharField(max_length=100)
+    destination_city = models.CharField(max_length=100)
+    airline = models.CharField(max_length=100)
+    seat_type = models.CharField(max_length = 100)
+    departure_date = models.CharField(max_length = 100)
+    adult_count = models.CharField(max_length=100)
+    child_count = models.CharField(max_length=100)
+    fullname = models.CharField(max_length=100)
+    mobile_number = models.CharField(max_length=100)
+    email = models.CharField(max_length=100)
+    user_id = models.CharField(max_length=100)
 
 class tour(models.Model):
     tour_id = models.AutoField(primary_key=True)

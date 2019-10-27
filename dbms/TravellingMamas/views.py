@@ -90,7 +90,7 @@ def hotel_booking(request):
         number_of_guests = request.POST['number_of_guests']
         room_type = request.POST['room_type']
         hotel_name = request.POST['hotel_name']
-
+        user_id = request.user.id
 
         if len(mobile_number) != 10:
             messages.info(request, "Mobile number should be 10 digit")
@@ -118,10 +118,11 @@ def hotel_booking(request):
                 check_in = check_in,
                 check_out = check_out,
                 number_of_guests = number_of_guests,
-                mobile_number = mobile_number
+                mobile_number = mobile_number,
+                user_id = user_id
             )
-            messages.info(request, "Hotel Booked Successfully")
-            time.sleep(3)
+            messages.info(request, "Booked Successfully")
+            time.sleep(5)
             return redirect('/')
 
     else:
@@ -135,7 +136,6 @@ def flight_search(request):
         source_city = request.POST['source_city']
         destination_city = request.POST['destination_city']
         departure_date = request.POST['departure_date']
-        class_type = request.POST['class_type']
         return_date = request.POST.get('return_date')
         round_depart_checkbox = request.POST.get('round_depart_checkbox')
         round_return_checkbox = request.POST.get('round_return_checkbox')
@@ -181,9 +181,44 @@ def flight_search(request):
         return render(request, 'flight_search.html')
 
 
-def booking_flight(request):    
-    return render(request, 'booking_flight.html')
+def booking_flight(request):
+    if request.method == 'POST':
+        source_city = request.POST['source_city']
+        destination_city = request.POST['destination_city']
+        airline = request.POST['airline']
+        seat_type = request.POST['seating']
+        departure_date = request.POST['date']
+        adult_count = request.POST['adult_count']
+        child_count = request.POST['child_count']
+        fullname = request.POST['name']
+        mobile_number = request.POST['mobile_number']
+        email = request.POST['email']
+        user_id = request.user.id
 
+        if len(mobile_number) != 10:
+            messages.info(request, "Mobile number should be 10 digit")
+            return redirect('booking_flight')
+       
+        else:   
+            models.user_flight_details.objects.create(
+                source_city = source_city,
+                destination_city = destination_city,
+                airline = airline,
+                seat_type = seat_type,
+                departure_date = departure_date,
+                adult_count = adult_count,
+                child_count = child_count,
+                fullname = fullname,
+                mobile_number = mobile_number,
+                email = email,
+                user_id = user_id
+            )
+            messages.info(request, "Booked Successfully")
+            # time.sleep(3)
+            return redirect('/')
+
+    else:
+        return render(request, 'booking_flight.html')
 
 def user(request):
     return render(request, 'user.html')
