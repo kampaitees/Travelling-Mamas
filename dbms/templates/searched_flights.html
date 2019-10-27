@@ -171,31 +171,86 @@
 
             <!--cards -->
            
+        
+    
 
+            {% if value %}
+                    <h1>Available Flights for Current Journey</h1>
+                    {% for flight in depart %}
+                        <div class="card">
+                        
+                        <div class="image">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+                        </div>
+                        <div class="title">
+                            <h1> <b>Indigo</b></h1>
+                        </div>
+                        <div class="des">
+                            <li>From: {{flight.source}} To: {{flight.destination}}</li>
+                            <p><span>{{flight.arrival_time}}</span></p>
+                            <p><span>{{flight.departure_time}}</span></p>
+                            <p><span>{{flight.duration}}</span></p>
+                            <p><span>{{flight.price}} INR</span></p>
+                            <div class="center">
+                                <button onclick = "location.href = 'booking_flight';" type = "submit" ion-button (click)="single(1, 0)" style=" margin-left: auto; margin-right: auto;display: block !important;"><b>Book Now</b></button>
+                            </div>
 
-           {% for flight in flights %}
-           <div class="card">
-           
-           <div class="image">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
-           </div>
-           <div class="title">
-            <h1> <b>Indigo</b></h1>
-           </div>
-           <div class="des">
-             <li>From: {{flight.source}}         To: {{flight.destination}}</li>
-             <p class="price"><span>{{flight.arrival_time}} INR</span></p>
-             <p class="price"><span>{{flight.departure_time}} INR</span></p>
-             <p class="price"><span>{{flight.duration}} INR</span></p>
-             <p class="price"><span>{{flight.price}} INR</span></p>
-            <div class="center">
-                <button onclick = "location.href = 'booking_flight';" type = "submit" ion-button (click)="single(1, 0)" style=" margin-left: auto; margin-right: auto;display: block !important;"><b>BUTTON</b></button>
-            </div>
+                        </div>
+                        </div>
+                    {% endfor %}
+                    
+                    <h1>Available Flights for Return Journey</h1>
 
-           </div>
-           </div>
+                    {% for flight in return %}
+                        <div class="card">
+                        
+                        <div class="image">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+                        </div>
+                        <div class="title">
+                            <h1> <b>Indigo</b></h1>
+                        </div>
+                        <div class="des">
+                            <li>From: {{flight.source}} To: {{flight.destination}}</li>
+                            <p><span>{{flight.arrival_time}}</span></p>
+                            <p><span>{{flight.departure_time}}</span></p>
+                            <p><span>{{flight.duration}}</span></p>
+                            <p><span>{{flight.price}} INR</span></p>
+                            <div class="center">
+                                <button onclick = "location.href = 'booking_flight';" type = "submit" ion-button (click)="single(1, 0)" style=" margin-left: auto; margin-right: auto;display: block !important;"><b>Book Now</b></button>
+                            </div>
 
-           {% endfor %}
+                        </div>
+                        </div>
+                    {% endfor %}
+               
+                
+                {% else %}
+                    {% for flight in flights %}    
+                        <div class="card">
+                            
+                            <div class="image">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+                            </div>
+                            <div class="title">
+                                <h1> <b>Indigo</b></h1>
+                            </div>
+                            <div class="des">
+                                <li>From: {{flight.source}} To: {{flight.destination}}</li>
+                                <p><span>{{flight.arrival_time}}</span></p>
+                                <p><span>{{flight.departure_time}}</span></p>
+                                <p><span>{{flight.duration}}</span></p>
+                                <p><span>{{flight.price}} INR</span></p>
+                                <div class="center">
+                                    <button onclick = "location.href = 'booking_flight';" type = "submit" ion-button (click)="single(1, 0)" style=" margin-left: auto; margin-right: auto;display: block !important;"><b>BUTTON</b></button>
+                                </div>
+
+                            </div>
+                            </div>
+
+                    {% endfor %}
+            
+            {% endif %}
 
             
             <div id="colorlib-blog">
