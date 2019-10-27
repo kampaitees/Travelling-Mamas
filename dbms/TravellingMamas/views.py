@@ -128,6 +128,64 @@ def hotel_booking(request):
         return render(request, 'hotel_booking.html')
 
 
+def flight_search(request):
+    flights = models.flight_prime.objects.all()
+    list_of_eligible_flights, list_of_eligible_return_flights = [], []
+    if request.method == 'POST':
+        source_city = request.POST['source_city']
+        destination_city = request.POST['destination_city']
+        departure_date = request.POST['departure_date']
+        class_type = request.POST['class_type']
+        return_date = request.POST.get('return_date')
+        round_depart_checkbox = request.POST.get('round_depart_checkbox')
+        round_return_checkbox = request.POST.get('round_return_checkbox')
+        oneway_depart_checkbox = request.POST.get('oneway_depart_checkbox')
+
+        if return_date is None:
+            for flight in flights:
+                if oneway_depart_checkbox is None:        
+                    if flight.source == source_city and flight.destination == destination_city and flight.date == departure_date:
+                        list_of_eligible_flights.append(flight)
+                        print(list_of_eligible_flights, class_type)
+                else:
+                    if flight.source == source_city and flight.destination == destination_city and flight.date >= departure_date:
+                        list_of_eligible_flights.append(flight)
+                        print(list_of_eligible_flights)
+            return render(request, 'searched_flights.html', {'flights':list_of_eligible_flights})
+        else:
+            for flight in flights:
+                if round_depart_checkbox is None:        
+                    if flight.source == destination_city and flight.destination == source_city and flight.date == departure_date:
+                        list_of_eligible_flights.append(flight)
+                        print(list_of_eligible_flights)
+                else:
+                    if flight.source == destination_city and flight.destination == source_city and flight.date >= departure_date:
+                        list_of_eligible_flights.append(flight)
+                        print(list_of_eligible_flights)
+
+                if round_return_checkbox is None:        
+                    if flight.source == destination_city and flight.destination == source_city and flight.date == return_date:
+                        list_of_eligible_return_flights.append(flight)
+                        print(list_of_eligible_return_flights)
+                else:
+                    if flight.source == destination_city and flight.destination == source_city and flight.date >= return_date:
+                        list_of_eligible_flights.append(flight)
+                        print(list_of_eligible_return_flights)
+            
+            return_dict = {'depart' : list_of_eligible_flights, 'return' : list_of_eligible_return_flights}
+                
+            return render(request, 'searched_flights.html', {'flights': return_dict})
+
+    else:
+        return render(request, 'flight_search.html')
+
+def searched_flights(request):
+    return render(request, 'searched_flights.html')
+
+
+def booking_flight(request):
+    return render(request, 'booking_flight.html')
+
 
 def user(request):
     return render(request, 'user.html')

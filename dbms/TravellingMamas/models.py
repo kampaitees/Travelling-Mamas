@@ -9,6 +9,16 @@ class hotel(models.Model):
     reviews = models.CharField(max_length=100)
     image = models.ImageField()
 
+class flight_prime(models.Model):
+    flight_code = models.AutoField(primary_key=True)
+    source = models.CharField(max_length=100)
+    destination = models.CharField(max_length=100)
+    arrival_time = models.CharField(max_length=100)
+    departure_time = models.CharField(max_length=100)
+    duration = models.CharField(max_length=100)
+    price = models.CharField(max_length=100)
+    date = models.CharField(max_length = 100)
+
 class user_details(models.Model):
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)

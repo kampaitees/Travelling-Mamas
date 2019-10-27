@@ -293,3 +293,85 @@ insert into travellingmamas_consists(hotel_id_id, room_id_id)
         (10, 6),
         (11, 3);
         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+INSERT INTO travellingmamas_flight_prime(source, destination, arrival_time, departure_time, duration, price, date)
+VALUES('BANGALORE','SRINAGAR','13:00','13:55','2.5hr', '5900', '10/24/2019');
+
+
+INSERT INTO travellingmamas_flight_prime(source, destination, arrival_time, departure_time, duration, price, date)
+VALUES('MANGALORE','SHIMLA','19:20','20:05','1.5hrs','6000', '10/25/2019');
+
+
+INSERT INTO travellingmamas_flight_prime(source, destination, arrival_time, departure_time, duration, price, date)
+VALUES('BANGALORE','SHIMLA','05:50','06:35','1.5hrs','6100', '10/26/2019');
+
+
+INSERT INTO travellingmamas_flight_prime(source, destination, arrival_time, departure_time, duration, price, date)
+VALUES('MANGALORE','NAINITAL','10:20','10:55','2.5hrs','6200', '10/27/2019');
+
+
+INSERT INTO travellingmamas_flight_prime(source, destination, arrival_time, departure_time, duration, price, date)
+VALUES('BANGALORE','NAINITAL','18:10','18:55','2.1hrs','6300', '10/28/2019');
+
+
+INSERT INTO travellingmamas_flight_prime(source, destination, arrival_time, departure_time, duration, price, date)
+VALUES('MANGALORE','DARJEELING','22:00','22:50','2.8hrs','6400', '10/29/2019');
+
+
+INSERT INTO travellingmamas_flight_prime(source, destination, arrival_time, departure_time, duration, price, date)
+VALUES('BANGALORE','DARJEELING','02:15','02:55','2.9hrs','6500', '10/30/2019');
+
+
+INSERT INTO travellingmamas_flight_prime(source, destination, arrival_time, departure_time, duration, price, date)
+VALUES('MANGALORE','COORG','18:50','19:40','2.5hrs','6600', '10/31/2019');
+
+
+INSERT INTO travellingmamas_flight_prime(source, destination, arrival_time, departure_time, duration, price, date)
+VALUES('BANGALORE','COORG','23:00','13:45','2.3hrs','6700', '11/01/2019');
+
+INSERT INTO travellingmamas_flight_prime(source, destination, arrival_time, departure_time, duration, price, date)
+VALUES('MANGALORE','OOTY','18:50','19:40','2.8hrs','6800', '11/02/2019');
+
+
+INSERT INTO travellingmamas_flight_prime(source, destination, arrival_time, departure_time, duration, price, date)
+VALUES('BANGALORE','OOTY','23:00','13:45','2.3hrs','6900', '11/03/2019');
+
+INSERT INTO travellingmamas_flight_prime(source, destination, arrival_time, departure_time, duration, price, date)
+VALUES('MANGALORE','ALLEPPEY','18:50','19:40','1.5hrs','7000', '11/04/2019');
+
+
+INSERT INTO travellingmamas_flight_prime(source, destination, arrival_time, departure_time, duration, price, date)
+VALUES('BANGALORE','ALLEPPEY','23:00','13:45','2.3hrs','7100', '11/05/2019');
+
+
+INSERT INTO travellingmamas_flight_prime(source, destination, arrival_time, departure_time, duration, price, date)
+VALUES('MANGALORE','DHARAMSHALA','18:50','19:40','2 hrs','7200', '11/06/2019');
+
+
+INSERT INTO travellingmamas_flight_prime(source, destination, arrival_time, departure_time, duration, price, date)
+VALUES('BANGALORE','DHARAMSHALA','23:00','13:45','2.3hrs','7300', '11/07/2019');
