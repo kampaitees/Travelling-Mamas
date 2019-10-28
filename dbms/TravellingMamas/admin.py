@@ -1,9 +1,9 @@
 from django.contrib import admin
-from .models import hotel, tour, user_details, flight, room_type, rooms, user, consists, contact, airline, hotel, hotel_class, has_room, has_flight, belong_to, book
+from .models import hotel, tour, user_hotel_details, flight, room_type, rooms, user, consists, contact, airline, hotel, hotel_class, has_room, has_flight, belong_to, book
 # Register your models here.
 admin.site.register(hotel)
 admin.site.register(tour)
-admin.site.register(user_details)
+admin.site.register(user_hotel_details)
 admin.site.register(flight)
 admin.site.register(room_type)
 admin.site.register(rooms)

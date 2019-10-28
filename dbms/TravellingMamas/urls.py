@@ -4,12 +4,7 @@ from . import views
 
 urlpatterns = [
     path('', views.home, name = 'home'),
-    path('layout', views.layout, name = 'layout'),
-    path('edit_profile', views.edit_profile, name = 'edit_profle'),
-    path('user', views.user, name = 'user'),
-    path('profile', views.profile, name = 'profile'),
     path('flight_search', views.flight_search, name = 'flight_search'),
-    # path('searched_flights', views.searched_flights, name = 'searched_flights'),
     path('booking_flight', views.booking_flight, name = 'booking_flight'),
     path('home', views.home, name = 'home'),
     path('about', views.about, name = 'about'),
@@ -18,7 +13,6 @@ urlpatterns = [
     path('hotel-room', views.hotel_room, name = 'hotel-room'),
     path('hotels', views.hotels, name = 'hotel'),
     path('services', views.service, name = 'services'),
-    # path('tour-place', views.tour_place, name = 'tour-place'),
     path('tours', views.tour, name = 'tours'),
     path('srinagar', views.srinagar, name = 'srinagar'),
     path('shimla', views.shimla, name = 'shimla'),
@@ -45,5 +39,8 @@ urlpatterns = [
     path('password_reset', PasswordResetView.as_view(template_name = 'password_reset.html'), name = 'password_reset'),
     path('password_reset/done', PasswordResetDoneView.as_view(), name = 'password_reset_done'),
     path('password_reset/confirm/<uidb64>/<token>/', PasswordResetConfirmView.as_view(), name = 'password_reset_confirm'),
-    path('password_reset/complete/', PasswordResetCompleteView.as_view(), name = 'password_reset_complete')
+    path('password_reset/complete/', PasswordResetCompleteView.as_view(), name = 'password_reset_complete'),
+    path('myprofile', views.myprofile, name = 'myprofile'),
+    path('myflightbooking', views.myflightbooking, name = "myflightbooking"),
+    path('myhotelbooking', views.myhotelbooking, name = "myhotelbooking")
 ]

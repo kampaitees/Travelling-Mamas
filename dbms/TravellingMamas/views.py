@@ -77,8 +77,12 @@ def hotel_booking(request):
                   'Hotel Vaikunth', 'Hotel InClover', 'Hotel Pink Resorts', 'Hotel Dauladhar', 'Hotel Zostel', 'Hotel Horizon Villa', 
                   'Hotel Imperial Resorts']
     list_of_hotels = [i.lower() for i in list_of_hotels] 
-    list_of_rooms = ['FAMILY ROOM', 'DOUBLE ROOM', 'SUITE ROOM', 'LUXURY ROOM', 'CLASSICAL DOUBLE ROOM', 'CLASSICAL DOUBLE ROOM']
+    list_of_rooms = ['FAMILY ROOM', 'LUXURY ROOM', 'DOUBLE ROOM', 'SUITE ROOM', 'SUPERIOR DOUBLE ROOM', 'CLASSICAL DOUBLE ROOM']
     list_of_rooms = [i.lower() for i in list_of_rooms]
+    price_of_rooms = ['600 INR', '1200 INR', '1999 INR', '2499 INR', '3499 INR', '4999 INR']
+    price_type = {}
+    for price, room_type in zip(price_of_rooms, list_of_rooms):
+        price_type[room_type] = price
 
     if request.method == 'POST':
         first_name = request.POST['first_name']
@@ -91,6 +95,11 @@ def hotel_booking(request):
         room_type = request.POST['room_type']
         hotel_name = request.POST['hotel_name']
         user_id = request.user.id
+
+        for key, _ in price_type.items():
+            if key == room_type.lower():
+                price = price_type[room_type.lower()]
+                break
 
         if len(mobile_number) != 10:
             messages.info(request, "Mobile number should be 10 digit")
@@ -109,7 +118,7 @@ def hotel_booking(request):
             messages.info(request, "Invalid Hotel Name")
             return redirect('hotel_booking')
         else:   
-            models.user_details.objects.create(
+            models.user_hotel_details.objects.create(
                 first_name = first_name,
                 last_name = last_name,
                 email = email,
@@ -119,10 +128,11 @@ def hotel_booking(request):
                 check_out = check_out,
                 number_of_guests = number_of_guests,
                 mobile_number = mobile_number,
-                user_id = user_id
+                user_id = user_id,
+                price = price
             )
-            messages.info(request, "Booked Successfully")
-            time.sleep(5)
+            # messages.info(request, "Booked Successfully")
+            # time.sleep(5)
             return redirect('/')
 
     else:
@@ -213,55 +223,64 @@ def booking_flight(request):
                 email = email,
                 user_id = user_id
             )
-            messages.info(request, "Booked Successfully")
+            # messages.info(request, "Booked Successfully")
             # time.sleep(3)
             return redirect('/')
 
     else:
         return render(request, 'booking_flight.html')
 
-def user(request):
-    return render(request, 'user.html')
 
+def myprofile(request):
+    current_object, current_user = None, None
+    user_instance = models.user_hotel_details.objects.all()
+    auth_user = User.objects.all()
+    
+    for users in auth_user:
+        if users.id == request.user.id:
+            current_user = users.username
+            break
 
-def edit_profile(request):
-    return render(request, 'edit_profile.html')
+    for objects in user_instance:
+        if objects.user_id == str(request.user.id):
+            current_object = objects
+            break
+    
+    return render(request, 'myprofile.html', {'user' : current_object, 'username' : current_user})
 
+def myflightbooking(request):
+    list_current_object, current_user = [], None
+    user_instance = models.user_flight_details.objects.all()
+    auth_user = User.objects.all()
+    
+    for users in auth_user:
+        if users.id == request.user.id:
+            current_user = users.username
+            break
 
-def layout(request):
-    return render(request, 'layout.html')
+    for objects in user_instance:
+        if objects.user_id == str(request.user.id):
+            list_current_object.append(objects)
+            
+    return render(request, 'myflightbooking.html', {'object' :list_current_object, 'username' : current_user})
 
+def myhotelbooking(request):
+    list_current_object, current_user = [], None
+    user_instance = models.user_hotel_details.objects.all()
+    auth_user = User.objects.all()
+    
+    for users in auth_user:
+        if users.id == request.user.id:
+            current_user = users.username
+            break
 
-def profile(request):
-    return render(request, 'profile.html')
+    for objects in user_instance:
+        if objects.user_id == str(request.user.id):
+            list_current_object.append(objects)
+    
+    # print(current_user, list_current_object[0].first_name)
+    return render(request, 'myhotelbooking.html', {'object' : list_current_object, 'username' : current_user})
 
-
-def home(request):
-    return render(request, 'home.html')
-
-def about(request):
-    return render(request, 'about.html')
-
-def blog(request):
-    return render(request, 'blog.html')
-
-def contact(request):
-    return render(request, 'contact.html')
-
-def hotel_room(request):
-    return render(request, 'hotel-room.html')
-
-def hotels(request):
-    return render(request, 'hotels.html')
-
-def service(request):
-    return render(request, 'services.html')
-
-# def tour_place(request):
-#     return render(request, 'tour_place.html')
-
-def tour(request):
-    return render(request, 'tours.html')
 
 def srinagar(request):
     list_hotels = []
@@ -373,6 +392,32 @@ def dharmashala(request):
         list_hotels.append((hotel, price))
     return render(request, 'dharmashala.html', {'list' : list_hotels})
 
+
+def home(request):
+    return render(request, 'home.html')
+
+def about(request):
+    return render(request, 'about.html')
+
+def blog(request):
+    return render(request, 'blog.html')
+
+def contact(request):
+    return render(request, 'contact.html')
+
+def hotel_room(request):
+    return render(request, 'hotel-room.html')
+
+def hotels(request):
+    return render(request, 'hotels.html')
+
+def service(request):
+    return render(request, 'services.html')
+
+def tour(request):
+    return render(request, 'tours.html')
+
+
 def kashmir(request):
     return render(request, 'kashmir.html')
 
@@ -402,4 +447,3 @@ def three(request):
 
 def two(request):
     return render(request, 'two.html')
-

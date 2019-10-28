@@ -375,3 +375,30 @@ VALUES('MANGALORE','DHARAMSHALA','18:50','19:40','2 hrs','7200', '11/06/2019');
 
 INSERT INTO travellingmamas_flight_prime(source, destination, arrival_time, departure_time, duration, price, date)
 VALUES('BANGALORE','DHARAMSHALA','23:00','13:45','2.3hrs','7300', '11/07/2019');
+
+
+insert into travellingmamas_has_room(room_id_id, room_number_id) values
+(1, 1001), (1, 1002), (1, 1003), (1, 1004), (1, 1005), (1, 1006),
+(2, 1001), (2, 1002), (2, 1003), (2, 1004), (2, 1005), (2, 1006),
+(3, 1001), (3, 1002), (3, 1003), (3, 1004), (3, 1005), (3, 1006),
+(4, 1001), (4, 1002), (4, 1003), (4, 1004), (4, 1005), (4, 1006),
+(5, 1001), (5, 1002), (5, 1003), (5, 1004), (5, 1005), (5, 1006),
+(6, 1001), (6, 1002), (6, 1003), (6, 1004), (6, 1005), (6, 1006)
+
+
+
+
+insert into travellingmamas_airline(name, head_quarter_city) values
+('air india', 'delhi'),
+('indigo', 'gurgaon'),
+('spicejet', 'gurgoan'),
+('vistara', 'gurgoan'),
+('goair', 'mumbai'),
+('air india', 'kochi'),
+('air asia', 'bengaluru')
+
+
+insert into travellingmamas_contact(contact) values
+('1234567890'),
+('1122334455'),
+('9876543212')

@@ -19,7 +19,7 @@ class flight_prime(models.Model):
     price = models.CharField(max_length=100)
     date = models.CharField(max_length = 100)
 
-class user_details(models.Model):
+class user_hotel_details(models.Model):
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
     email = models.CharField(max_length=100)
@@ -30,6 +30,7 @@ class user_details(models.Model):
     number_of_guests = models.CharField(max_length=100)
     mobile_number = models.CharField(max_length=100)
     user_id = models.CharField(max_length=100)
+    price = models.CharField(max_length=100)
 
 
 class user_flight_details(models.Model):
