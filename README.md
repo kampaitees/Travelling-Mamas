@@ -55,6 +55,7 @@
 ## Demo
 
 
+
 ### Visting varoius Destinations
 
 
@@ -95,7 +96,9 @@
 
 
 
+
 ### After finding a hotels you will be lead to a page where you are allowed to choose the type of room you want
+
 
 
 <p align="center">
@@ -114,6 +117,59 @@
 <p align="center">
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(42).png"/>
 </p>
+
+
+
+
+### Searching flights for a destination
+
+
+
+#### Searching One Way flight
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(43).png"/>
+</p>
+
+
+
+#### Searching Two Way flight
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(44).png"/>
+</p>
+
+
+
+
+### This will lead to a page where you can see the price of different available flight and can click on book option
+
+
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(45).png"/>
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(46).png"/>
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(47).png"/>
+</p>
+
+
+
+
+### Clicking Book option will lead to a form page where you have to enter your details and finally submit the form for flight booking, you can also clear the form by clicking on the 'Clear form' option
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(48).png"/>
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(49).png"/>
+</p>
+
 
 
 
