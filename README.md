@@ -46,14 +46,14 @@
 
 </p>
 
-#### This project is website which can be used to choose various destinations for visiting in India, can book hotels as well as book flights.
+This project is website which can be used to choose various destinations for visiting in India, can book hotels as well as book flights.
 
 
 ## Demo
 
 ### Visting varoius Destinations
 
-#### You can click on the destination option on the Nav bar and can visit various destination
+You can click on the destination option on the Nav bar and can visit various destination
 
 <p align="center">
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(24).png"/>
@@ -63,7 +63,7 @@
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(28).png"/>
 </p>
 
-#### On clicking any destination it will lead to page where you can know about the famous places in that particular city of that state to visit if you plan to visit the city and don't know anything about it.
+On clicking any destination it will lead to page where you can know about the famous places in that particular city of that state to visit if you plan to visit the city and don't know anything about it.
 
 <p align="center">  
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(29).png"/>
@@ -71,9 +71,28 @@
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(31).png"/>
 </p>
 
-### Booking hotels
+### Finding hotels after choosing a destination
 <p align="center">
-  
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(32).png"/>
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(33).png"/>
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(34).png"/>
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(35).png"/>
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(36).png"/>
+</p>
+
+
+### After finding a hotels you will be lead to a page where you are allowed to choose the type of room you want
+<p align="center">
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(37).png"/>
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(38).png"/>
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(39).png"/>
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(40).png"/>
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(41).png"/>
+</p>
+
+### Finally you can book your hotel with your details
+<p align="center">
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(42).png"/>
 </p>
 
 ## Demo Video
