@@ -186,7 +186,7 @@
 
 
 
-### Login the website
+### Login in the website
 
 
 
@@ -194,6 +194,29 @@
 <p align="center">
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(52).png"/>
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(53).png"/>
+</p>
+
+
+
+### After you login in the website your name will be displayed
+
+
+
+<p align="center">
+   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(54).png"/>
+</p>
+
+
+
+
+### If you forgot the password then, I had also included the functionality of password changing
+
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(55).png"/>
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(56).png"/>
 </p>
 
 
