@@ -12,7 +12,7 @@
   
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(14).png"/>
   
-  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(15).png"/>
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(23).png"/>
   
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(16).png"/>
   
