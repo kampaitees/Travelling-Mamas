@@ -8,39 +8,72 @@
 <p align="center">
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(22).png"/>
   
+  
+  
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(13).png"/>
+  
+  
   
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(14).png"/>
   
+  
+  
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(23).png"/>
+  
+  
   
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(16).png"/>
   
+  
+  
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(17).png"/>
+  
+  
   
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(18).png"/>
   
+  
+  
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(19).png"/>
+  
+  
   
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(20).png"/>
   
+  
+  
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(21).png"/>
+
 </p>
 
-This project is website which can be used to choose various destinations for visiting in India, can book hotels as 
-well as book flights.
+#### This project is website which can be used to choose various destinations for visiting in India, can book hotels as well as book flights.
 
 
 ## Demo
 
-### Input Image
+### Visting varoius Destinations
+
+#### You can click on the destination option on the Nav bar and can visit various destination
+
 <p align="center">
-  <img src = "https://github.com/kampaitees/Web-App-for-Image-Search/blob/master/ksp/media/15.jpg"/>
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(24).png"/>
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(25).png"/>
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(26).png"/>
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(27).png"/>
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(28).png"/>
 </p>
 
-### Output
+#### On clicking any destination it will lead to page where you can know about the famous places in that particular city of that state to visit if you plan to visit the city and don't know anything about it.
+
+<p align="center">  
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(29).png"/>
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(30).png"/>
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(31).png"/>
+</p>
+
+### Booking hotels
 <p align="center">
-  <img src = "https://github.com/kampaitees/Web-App-for-Image-Search/blob/master/ksp/media/2019-07-20%20(2).png"/>
+  
 </p>
 
 ## Demo Video
