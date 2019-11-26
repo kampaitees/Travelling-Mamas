@@ -7,20 +7,29 @@
 
 <p align="center">
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(22).png"/>
+  
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(13).png"/>
+  
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(14).png"/>
+  
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(15).png"/>
+  
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(16).png"/>
+  
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(17).png"/>
+  
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(18).png"/>
+  
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(19).png"/>
+  
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(20).png"/>
+  
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(21).png"/>
 </p>
 
-This project is a website which is used to do image search from the database. It takes in an image and name of image
-as an input and asks for number of similar image you want to see as output and after clicking on "Upload" option it will
-show the similar images as output.
+This project is website which can be used to choose various destinations for visiting in India, can book hotels as 
+well as book flights.
+
 
 ## Demo
 
