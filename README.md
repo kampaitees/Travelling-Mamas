@@ -6,7 +6,7 @@
    - [:point_right: Project Report](https://github.com/kampaitees/Travelling-Mamas/blob/master/Travelling%20Mamas%20Report.pdf)
 
 <p align="center">
-  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(12).png"/>
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(22).png"/>
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(13).png"/>
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(14).png"/>
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(15).png"/>
