@@ -222,6 +222,27 @@
 
 
 
+### After clicking on the password changing option you will recieve the following mail on your email where you will get a link clicking on which will lead to a page where you can change your password
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(57).png"/>
+</p>
+
+
+
+### On clicking the link you can enter your new password and login to your account
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(58).png"/>
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(59).png"/>
+</p>
+
+
+
+
 ## Demo Video
 [:point_right: Watch it here](https://drive.google.com/open?id=1iw-bVxwMIuGMh9eGh7p7fQYo-XU_Esr0)
 
