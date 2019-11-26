@@ -1,6 +1,6 @@
 # Travelling Mamas, a destination booking website
 
-  ### Abstract & Report for the project
+### Abstract & Report for the project
 
    - [:point_right: Project Abstract](https://github.com/kampaitees/Travelling-Mamas/blob/master/Abstract%20for%20Traveling%20Mamas.pdf)
    - [:point_right: Project Report](https://github.com/kampaitees/Travelling-Mamas/blob/master/Travelling%20Mamas%20Report.pdf)
@@ -46,14 +46,20 @@
 
 </p>
 
-This project is website which can be used to choose various destinations for visiting in India, can book hotels as well as book flights.
+
+
+#### This project is website which can be used to choose various destinations for visiting in India, can book hotels as well as book flights.
+
 
 
 ## Demo
 
+
 ### Visting varoius Destinations
 
-You can click on the destination option on the Nav bar and can visit various destination
+
+#### You can click on the destination option on the Nav bar and can visit various destination
+
 
 <p align="center">
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(24).png"/>
@@ -63,7 +69,10 @@ You can click on the destination option on the Nav bar and can visit various des
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(28).png"/>
 </p>
 
-On clicking any destination it will lead to page where you can know about the famous places in that particular city of that state to visit if you plan to visit the city and don't know anything about it.
+
+#### On clicking any destination it will lead to page where you can know about the famous places in that particular city of that state to visit if you plan to visit the city and don't know anything about it.
+
+
 
 <p align="center">  
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(29).png"/>
@@ -71,7 +80,11 @@ On clicking any destination it will lead to page where you can know about the fa
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(31).png"/>
 </p>
 
+
+
 ### Finding hotels after choosing a destination
+
+
 <p align="center">
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(32).png"/>
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(33).png"/>
@@ -81,7 +94,10 @@ On clicking any destination it will lead to page where you can know about the fa
 </p>
 
 
+
 ### After finding a hotels you will be lead to a page where you are allowed to choose the type of room you want
+
+
 <p align="center">
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(37).png"/>
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(38).png"/>
@@ -90,10 +106,16 @@ On clicking any destination it will lead to page where you can know about the fa
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(41).png"/>
 </p>
 
+
+
 ### Finally you can book your hotel with your details
+
+
 <p align="center">
   <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-26%20(42).png"/>
 </p>
+
+
 
 ## Demo Video
 [:point_right: Watch it here](https://drive.google.com/open?id=1iw-bVxwMIuGMh9eGh7p7fQYo-XU_Esr0)
