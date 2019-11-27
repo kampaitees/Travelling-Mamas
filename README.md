@@ -317,13 +317,11 @@
 
 
 ## Demo Video
-[:point_right: Watch it here](https://drive.google.com/open?id=1iw-bVxwMIuGMh9eGh7p7fQYo-XU_Esr0)
+[:point_right: Watch it here](https://photos.google.com/photo/AF1QipOUSLEnx9ZsgcBAufVSdC3YZ-Z-60deSlbt1n70)
 
 ### Motivation
-This website I had created as this was my Internship task which I was doing in Bengaluru at KSP computer wing and working
-under IISC professor Mr. Ambedkar. Task was to create a website to do criminal image search from database, thereby saving
-there time instead of searching manually.
-
+This website I had created as a part of project of course **CO303**. The task was to create a website using any framework but backend should be using **MySql**. So I decided to use **Django** as framework and **MySql** for backend purpose as I was familiar with **Python** already.
+ 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
@@ -345,22 +343,16 @@ See deployment for notes on how to deploy the project on a live system.
 #### To install below dependencies
  ```
   - Django==2.2.2 
+  - dj-database-url==0.5.0
+  - django-bootstrap3==11.0.0
+  - django-cleanup==3.2.0
   - djangorestframework==3.9.4 
-  - Keras==2.2.4 
-  - Keras-Applications==1.0.8
-  - Keras-Preprocessing==1.1.0 
-  - numpy==1.16.1 
-  - opencv-contrib-python==3.2.0.7 
-  - opencv-python==3.1.0.5 
+  - mysql-connector-python==8.0.17
+  - mysqlclient==1.4.2.post1
   - Pillow==6.0.0 
   - psycopg2==2.8.3 
   - requests==2.22.0 
-  - scipy==1.3.0 
-  - tensorflow-estimator==1.13.0 
-  - tensorflow==1.10.0 
-  - termcolor==1.1.0 
   - urllib3==1.25.3 
-  - virtualenv==16.6.1 
  ```
  
 #### For the following below dependencies you have download them separately 
@@ -375,27 +367,22 @@ See deployment for notes on how to deploy the project on a live system.
  ## Built With
  
   - [Django](https://www.djangoproject.com/) - Framework used
-  - [Numpy](https://numpy.org/) - For mathematical operation
   - [Pillow](https://pypi.org/project/Pillow/) - For opening images
-  - [Postgresql](https://dev.mysql.com/) - Database handling
+  - [MySql](https://dev.mysql.com/) - Database handling
 
 ### Folder structure
 
 ```
 .
-└── KSP
+└── dbms
     ├── __pycache__
-    ├── ksp
+    ├── dbms
     │   ├── __pycache__
     │   └── __init__.py
     |   └── settings.py
     |   └── urls.py
     |   └──wsgi.py
-    ├── models
-    |   └── shape_predictor_68_face_landmarks.dat
-    |   └── facenet_keras.h5
-    |   └── haarcascade_frontalface_default.xml
-    ├── pages
+    ├── TravellingMamas
     │   ├── __pycache__
     │   └── migrations
     |       ├── __pycache__
@@ -410,13 +397,12 @@ See deployment for notes on how to deploy the project on a live system.
     │   └── views.py
     |
     ├── media
-    │   ├── search
-    |       └── ...
-    │   └── database
-    |       └── ... 
-    │   └── video_diamond.mp4
-    │   └── video_pink.mp4
-    │   └── video_round.mp4
+    │   ├── alleppey.jpg
+    |   └── ...
+    |   └── ... 
+    │   └── ...
+    │   └── ...
+    │   └── tour2.jpg
     |
     ├── static
     │   ├── css
@@ -428,13 +414,21 @@ See deployment for notes on how to deploy the project on a live system.
     ├── templates
     │	├── about.html
     | └── blog-home.html
-    │	└── blog-single.html
+    | └── ...
+    | └── ... 
     │ └── contact.html
+    │ └── ...
     │ └── home.html
-    │ └── res.html
-    │ └── search_image.html
-    │ └── team.html
-    │ └── upload_database.html
+    │ └── darjeeling.html
+    │ └── ...
+    │ └── edit_profile.html
+    │ └── ...
+    │ └── ...
+    │ └── ...
+    │ └── tour-place.html
+    │ └── ...
+    │ └── ...
+    │ └── user.html
     |
     └── manage.py
 ```
