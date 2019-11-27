@@ -277,6 +277,45 @@
 
 
 
+### You can contact me if you have any problem regarding the website or any other problem
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-27%20(3).png"/>
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-27%20(4).png"/>
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-27%20(5).png"/>
+</p>
+
+
+
+
+
+### If you want to see the blogs about our recent customers you can read them to enjoy ther story too
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-27%20(6).png"/>
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-27%20(7).png"/>
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-27%20(8).png"/>
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-27%20(9).png"/>
+</p>
+
+
+
+
+
+### Here you can see the serivces provided by the website
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-27%20(10).png"/>
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-27%20(11).png"/>
+</p>
+
+
+
+
+
 ## Demo Video
 [:point_right: Watch it here](https://drive.google.com/open?id=1iw-bVxwMIuGMh9eGh7p7fQYo-XU_Esr0)
 
