@@ -317,7 +317,7 @@
 
 
 ## Demo Video
-[:point_right: Watch it here](https://photos.google.com/photo/AF1QipOUSLEnx9ZsgcBAufVSdC3YZ-Z-60deSlbt1n70)
+[:point_right: Watch it here](https://drive.google.com/open?id=1alndxhlsJQaVVlx31Ysrt8E1Ndu5r1m7)
 
 ### Motivation
 This website I had created as a part of project of course **CO303**. The task was to create a website using any framework but backend should be using **MySql**. So I decided to use **Django** as framework and **MySql** for backend purpose as I was familiar with **Python** already.
