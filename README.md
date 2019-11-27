@@ -243,6 +243,40 @@
 
 
 
+### My Profile page
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-27.png"/>
+</p>
+
+
+
+
+
+### My Flight Booking page
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-27%20(2).png"/>
+</p>
+
+
+
+
+
+
+### My Hotel Booking page
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Travelling-Mamas/blob/master/Images/2019-11-27%20(1).png"/>
+</p>
+
+
+
+
+
 ## Demo Video
 [:point_right: Watch it here](https://drive.google.com/open?id=1iw-bVxwMIuGMh9eGh7p7fQYo-XU_Esr0)
 
