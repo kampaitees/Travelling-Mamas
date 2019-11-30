@@ -1,4 +1,4 @@
-# Travelling Mamas, a destination booking website
+# Travelling Mamas, a Destination Booking Website
 
 ### Abstract & Report for the project
 
