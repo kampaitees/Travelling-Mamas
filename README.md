@@ -1,6 +1,6 @@
 # Travelling Mamas, a Destination Booking Website
 
-### Abstract & Report for the project
+### Abstract and Report for the project
 
    - [:point_right: Project Abstract](https://github.com/kampaitees/Travelling-Mamas/blob/master/Abstract%20for%20Traveling%20Mamas.pdf)
    - [:point_right: Project Report](https://github.com/kampaitees/Travelling-Mamas/blob/master/Travelling%20Mamas%20Report.pdf)
